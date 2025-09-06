@@ -12,3 +12,8 @@ CREATE TABLE exercises (
   type TEXT NOT NULL,
   completed_at TEXT NOT NULL
 );
+
+CREATE TABLE settings (
+  key TEXT PRIMARY KEY,
+  value TEXT NOT NULL
+);

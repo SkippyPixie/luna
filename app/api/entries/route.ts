@@ -20,5 +20,5 @@ export async function POST(request: NextRequest) {
   )
     .bind(id, date, mood, tags, body)
     .run();
-  return new Response(null, { status: 201 });
+  return Response.json({ id }, { status: 201 });
 }

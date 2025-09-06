@@ -14,8 +14,10 @@ export default function EntryPage({ params }: EntryPageProps) {
   if (!entry) return <p>Loading...</p>;
   return (
     <article>
-      <h1>Entry {entry.id}</h1>
-      <p>{entry.content}</p>
+      <h1>{entry.date}</h1>
+      <p>Mood: {entry.mood}</p>
+      {entry.tags && <p>Tags: {entry.tags}</p>}
+      <p>{entry.body}</p>
     </article>
   );
 }
