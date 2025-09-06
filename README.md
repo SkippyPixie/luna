@@ -1,0 +1,2 @@
+# NotStoic
+A journaling app
