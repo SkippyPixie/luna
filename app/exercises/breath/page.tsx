@@ -21,8 +21,13 @@ export default function BreathPage() {
   return (
     <section>
       <h1>Box Breathing</h1>
-      <button style={{ fontSize: '2rem', padding: '4rem' }}>
-        {phases[phase]} {count}
+      <button
+        aria-label={`${phases[phase]} for ${count} seconds`}
+        style={{ fontSize: '2rem', padding: '4rem' }}
+      >
+        <span aria-live="polite">
+          {phases[phase]} {count}
+        </span>
       </button>
     </section>
   );

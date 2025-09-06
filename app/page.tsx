@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <section>
       <h1>Stoic Journal</h1>
-      <nav>
+      <nav aria-label="Primary">
         <Link href="/check-in">Check In</Link>
         <Link href="/journal">Journal</Link>
         <Link href="/stats">Stats</Link>

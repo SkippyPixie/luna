@@ -1,11 +1,13 @@
 :root {
   --bg: #ffffff;
   --text: #000000;
+  --focus: #ffab00;
 }
 
 [data-theme='dark'] {
   --bg: #000000;
   --text: #ffffff;
+  --focus: #ffab00;
 }
 
 body {
@@ -30,4 +32,32 @@ nav {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--text);
+  border-radius: 4px;
+}
+
+button {
+  background: var(--text);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  background: var(--bg);
+  color: var(--text);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
