@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import Onboarding from './pages/Onboarding';
+import Onboarding from './Onboarding';
 
 export default function App() {
   return (
