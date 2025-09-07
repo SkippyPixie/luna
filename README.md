@@ -1,2 +1,2 @@
-# NotStoic
+# luna
 A journaling app
